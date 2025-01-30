@@ -11,7 +11,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-# Function that simulates load every 10 seconds
+# Function that simulates load
 def simulate_cpu_load():
     while True:
         # Simulate high CPU usage by calculating Fibonacci(35)
