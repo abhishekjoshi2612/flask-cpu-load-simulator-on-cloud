@@ -47,9 +47,9 @@ cd flask-cpu-load-simulator-on-cloud
 ![docker-file-ss](https://github.com/user-attachments/assets/7e17a23a-927a-4a77-996b-44e2776259e2)
 
 3. Build the Docker image (multi-stage build):
-3.1 docker build -t <your_dockerhub_username>/abhishek-flask-app:latest .
-3.2 Run the Docker container: docker run -d -p 80:80 --name abhishek-flask-app <your_dockerhub_username>/abhishek-flask-app:latest
-3.3 Access the application at http://localhost:80.
+### 3.1 docker build -t <your_dockerhub_username>/abhishek-flask-app:latest .
+### 3.2 Run the Docker container: docker run -d -p 80:80 --name abhishek-flask-app <your_dockerhub_username>/abhishek-flask-app:latest
+### 3.3 Access the application at http://localhost:80.
 
 ### Deployment to Kubernetes
 ![pod-memory-usage](https://github.com/user-attachments/assets/206be1ba-8421-4f1d-98e4-760da60be30e)
