@@ -37,7 +37,7 @@ This repository contains a simple Flask application that simulates CPU load, des
 1. Clone the repository:
 ![Screenshot 2025-01-30 184309](https://github.com/user-attachments/assets/3e1e327d-723a-41a0-b365-27ff2fde6cfc)
 
-```bash
+
 git clone <your_repo_url>
 cd flask-cpu-load-simulator-on-cloud
 
