@@ -1,0 +1,15 @@
+# Service for the application
+apiVersion: v1
+kind: Service
+metadata:
+  name: abhishek-joshi-flask-app
+  labels:
+    app: abhishek-joshi-flask-app
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: abhishek-joshi-flask-app
+  type: LoadBalancer

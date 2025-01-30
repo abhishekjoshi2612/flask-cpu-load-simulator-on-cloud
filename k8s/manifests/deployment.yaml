@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: abhishek-joshi-flask-app
+  labels:
+    app: abhishek-joshi-flask-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: abhishek-joshi-flask-app
+  template:
+    metadata:
+      labels:
+        app: abhishek-joshi-flask-app
+    spec:
+      containers:
+      - name: flask-app
+        image: abhishek2691999/abhishek-flask-app:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"  # Minimum memory requested for the container
+            cpu: "100m"      # Minimum CPU requested for the container
+          limits:
+            memory: "256Mi"  # Maximum memory limit for the container
+            cpu: "500m"      # Maximum CPU limit for the container
