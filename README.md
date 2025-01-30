@@ -51,6 +51,10 @@ This repository contains a simple Flask application that simulates CPU load, des
 3.3 Access the application at http://localhost:80.
 
 ### Deployment to Kubernetes
+![image](https://github.com/user-attachments/assets/656b5db6-dd9f-4015-8995-35c2c2f3cef5)
+
+
+
 ![pod-memory-usage](https://github.com/user-attachments/assets/206be1ba-8421-4f1d-98e4-760da60be30e)
 
 4. Create EKS Cluster : eksctl create cluster --name abhishek-demo-cluster --region us-east-1
