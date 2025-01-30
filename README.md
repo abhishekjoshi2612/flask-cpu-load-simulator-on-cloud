@@ -34,22 +34,21 @@ This repository contains a simple Flask application that simulates CPU load, des
 * Metrics Server (for HPA) (https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml)
 
 ### Installation
-1. Clone the repository:
 ![Screenshot 2025-01-30 184309](https://github.com/user-attachments/assets/3e1e327d-723a-41a0-b365-27ff2fde6cfc)
+1. Clone the repository: git clone <your_repo_url>
 
-
-git clone <your_repo_url>
-cd flask-cpu-load-simulator-on-cloud
-
-2. Install the1 dependencies: pip install -r requirements.txt
+2. Install the dependencies: pip install -r requirements.txt
 
 ### Running Locally (Docker)
 ![docker-file-ss](https://github.com/user-attachments/assets/7e17a23a-927a-4a77-996b-44e2776259e2)
 
 3. Build the Docker image (multi-stage build):
-### 3.1 docker build -t <your_dockerhub_username>/abhishek-flask-app:latest .
-### 3.2 Run the Docker container: docker run -d -p 80:80 --name abhishek-flask-app <your_dockerhub_username>/abhishek-flask-app:latest
-### 3.3 Access the application at http://localhost:80.
+
+3.1 docker build -t <your_dockerhub_username>/abhishek-flask-app:latest .
+
+3.2 Run the Docker container: docker run -d -p 80:80 --name abhishek-flask-app <your_dockerhub_username>/abhishek-flask-app:latest
+
+3.3 Access the application at http://localhost:80.
 
 ### Deployment to Kubernetes
 ![pod-memory-usage](https://github.com/user-attachments/assets/206be1ba-8421-4f1d-98e4-760da60be30e)
@@ -57,7 +56,7 @@ cd flask-cpu-load-simulator-on-cloud
 4. Create EKS Cluster : eksctl create cluster --name abhishek-demo-cluster --region us-east-1
 
 5. Install Metrics Server:
- kubectl apply -f [https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml](https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml)
+kubectl apply -f [https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml](https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml)
 
 6. Apply the configurations:
 kubectl apply -f deployment.yaml
