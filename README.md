@@ -2,7 +2,7 @@
 
 This repository contains a simple Flask application that simulates CPU load, designed for cloud deployment using Kubernetes.
 
-## Table of Contents
+## Table of Content
 
 * [Features](#features)
 * [Getting Started](#getting-started)
